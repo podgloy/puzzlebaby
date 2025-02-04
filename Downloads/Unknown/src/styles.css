@@ -1,0 +1,55 @@
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* ✅ ปิดการ Scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* สีพื้นหลัง */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-container {
+  position: relative;
+  width: 100vw; /* ✅ กำหนดให้เต็มหน้าจอ */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.board-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.piece {
+  position: absolute;
+  cursor: grab;
+}
+
+.piece:active {
+  cursor: grabbing;
+}
